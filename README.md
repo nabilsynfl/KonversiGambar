@@ -1,6 +1,6 @@
-# KonversiGambar
+# KonvGambar
 
-KonversiGambar adalah sebuah program sederhana berbasis CLI dengan
+KonvGambar adalah sebuah program sederhana berbasis CLI dengan
 fitur merubah gambar berwarna menjadi sketsa pensil
 
 
