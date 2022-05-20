@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri May 20 14:42:42 2022
-
 @author: nabil
 """
 import cv2
@@ -11,24 +10,26 @@ from shutil import get_terminal_size
 from threading import Thread
 from time import sleep
 
-def awal():
-    print("Pastikan file foto sudah satu folder dengan aplikasi")
-    namaFile = input("Masukan nama file : ")
-    namaFileOutput = input("Masukan nama file setelah di konversi : ")
-    img = cv2.imread(namaFile, 1)
-    
-awal()
+namaFile = ""
+namaFileOutput = ""
+print("Pastikan file foto sudah satu folder dengan aplikasi")    
 
-try:
-    img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    img_invert = cv2.bitwise_not(img_gray)
-    img_smoothing = cv2.GaussianBlur(img_invert, (21, 21), sigmaX=0, sigmaY=0)
-    final_img = cv2.divide(img_gray, 255 - img_smoothing, scale=256)
-    cv2.imwrite(namaFileOutput, final_img)
+def awal():
+    namaFile = input("Nama file : ")
+    namaFileOutput = input("Tuliskan nama file setelah di konversi : ")
     
-except:
-    print('Nama file yang anda masukan tidak ada atau salah')
-    awal()
+    try:
+        img = cv2.imread(namaFile, 1)
+        img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        img_invert = cv2.bitwise_not(img_gray)
+        img_smoothing = cv2.GaussianBlur(img_invert, (21, 21), sigmaX=0, sigmaY=0)
+        final_img = cv2.divide(img_gray, 255 - img_smoothing, scale=256)
+        cv2.imwrite(namaFileOutput, final_img)
+        
+    except:
+        print('\n\nTuliskan nama file dengan benar!!                  ')
+        awal()
+        
 
 class Loader:
     def __init__(self, desc="Loading...", end="Done!", timeout=0.1):
@@ -66,6 +67,7 @@ class Loader:
 
 
 if __name__ == "__main__":
+    awal()
     with Loader("Loading gambar mohon tunggu..."):
         for i in range(10):
             sleep(0.25)
@@ -74,4 +76,3 @@ if __name__ == "__main__":
     for i in range(10):
         sleep(0.25)
     loader.stop()
-print("Gambar berhasil di konversi dengan nama file", namaFileOutput)
