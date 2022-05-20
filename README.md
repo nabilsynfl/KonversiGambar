@@ -48,10 +48,7 @@ $ python3 KonversiGambar.py
   
 ![Kazam_screenshot_00006](https://user-images.githubusercontent.com/97229948/169575888-5c937ae0-eeea-4c03-b35e-8f5cd28e8b35.png)
   
-  Tekan 0 pada keyboard untuk keluar program : 
-  
-  
-![Kazam_screenshot_00005](https://user-images.githubusercontent.com/97229948/169576272-77efb30b-9536-464e-8982-1deea553a54c.png)
-
+  Easy right?
+  Tekan 0 pada keyboard jika ingin keluar program 
   
 
