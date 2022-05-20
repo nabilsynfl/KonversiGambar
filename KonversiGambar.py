@@ -25,6 +25,7 @@ try:
     
 except:
     print('Nama file yang anda masukan tidak ada atau salah')
+    break
 
 class Loader:
     def __init__(self, desc="Loading...", end="Done!", timeout=0.1):
