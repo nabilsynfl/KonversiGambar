@@ -1,7 +1,7 @@
 # KonversiGambar
 
 KonversiGambar adalah sebuah program sederhana berbasis CLI dengan
-Fungsi merubah gambar berwarna menjadi sketsa pensil
+fitur merubah gambar berwarna menjadi sketsa pensil
 
 
 ![Kazam_screenshot_00001](https://user-images.githubusercontent.com/97229948/169492365-4c027258-99b6-46d4-b9e9-4fe744a867f7.png)
