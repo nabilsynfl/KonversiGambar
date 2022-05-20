@@ -10,11 +10,14 @@ from itertools import cycle
 from shutil import get_terminal_size
 from threading import Thread
 from time import sleep
-print("Pastikan file foto sudah satu folder dengan aplikasi")
-namaFile = input("Masukan nama file : ")
-namaFileOutput = input("Masukan nama file setelah di konversi : ")
-img = cv2.imread(namaFile, 1)
 
+def awal():
+    print("Pastikan file foto sudah satu folder dengan aplikasi")
+    namaFile = input("Masukan nama file : ")
+    namaFileOutput = input("Masukan nama file setelah di konversi : ")
+    img = cv2.imread(namaFile, 1)
+    
+awal()
 
 try:
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -25,7 +28,7 @@ try:
     
 except:
     print('Nama file yang anda masukan tidak ada atau salah')
-    break
+    awal()
 
 class Loader:
     def __init__(self, desc="Loading...", end="Done!", timeout=0.1):
