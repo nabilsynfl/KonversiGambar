@@ -12,3 +12,16 @@
   
   
  ![cityfinal](https://user-images.githubusercontent.com/97229948/169489903-d8392415-634c-42c8-8543-bb20d9aa06af.jpg)
+  
+  
+  
+  
+ ###Step Installation
+  ```BASH
+$ sudo apt-get update
+$ sudo apt-get install -y git
+$ git clone https://github.com/Nabil-Syahnaufal/HackingMikrotik-DDOS
+$ cd HackingMikrotik-DDOS
+$ python3 -m pip install -r requirements.txt
+$ python3 HackingTools.py
+```
