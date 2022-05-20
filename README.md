@@ -20,8 +20,7 @@
   ```BASH
 $ sudo apt-get update
 $ sudo apt-get install -y git
-$ git clone https://github.com/Nabil-Syahnaufal/HackingMikrotik-DDOS
-$ cd HackingMikrotik-DDOS
+$ git clone https://github.com/Nabil-Syahnaufal/KonversiGambar.git
 $ python3 -m pip install -r requirements.txt
-$ python3 HackingTools.py
+$ python3 KonversiGambar.py
 ```
