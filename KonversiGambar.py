@@ -5,18 +5,16 @@ Created on Fri May 20 14:42:42 2022
 @author: nabil
 """
 import cv2
+import sys
 from itertools import cycle
 from shutil import get_terminal_size
 from threading import Thread
 from time import sleep
 
-namaFile = ""
-namaFileOutput = ""
-print("Pastikan file foto sudah satu folder dengan aplikasi")    
+namaFile = input("Nama file : ")
+namaFileOutput = input("Tuliskan nama file setelah di konversi : ")
 
-def awal():
-    namaFile = input("Nama file : ")
-    namaFileOutput = input("Tuliskan nama file setelah di konversi : ")
+def awal(namaFile, namaFileOutput):
     
     try:
         img = cv2.imread(namaFile, 1)
@@ -28,7 +26,7 @@ def awal():
         
     except:
         print('\n\nTuliskan nama file dengan benar!!                  ')
-        awal()
+        sys.exit()
         
 
 class Loader:
@@ -67,7 +65,7 @@ class Loader:
 
 
 if __name__ == "__main__":
-    awal()
+    awal(namaFile, namaFileOutput)
     with Loader("Loading gambar mohon tunggu..."):
         for i in range(10):
             sleep(0.25)
@@ -76,3 +74,9 @@ if __name__ == "__main__":
     for i in range(10):
         sleep(0.25)
     loader.stop()
+    
+img = cv2.imread(namaFileOutput, 1)
+cv2.imshow('image',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
