@@ -27,16 +27,24 @@ $ python3 KonversiGambar.py
 ```
   
   ### Cara menggunakan
-  Masukan direktori file
+  Masukan direktori file : 
+  
+  
 ![Kazam_screenshot_00003](https://user-images.githubusercontent.com/97229948/169574753-4b2854f4-f288-4025-9761-183a2c5d1bee.png)
   
-  tuliskan nama ouput file dan tekan Enter
+  tuliskan nama ouput file dan tekan Enter : 
+  
+  
 ![Kazam_screenshot_00004](https://user-images.githubusercontent.com/97229948/169575329-740cd5c3-e1e1-471c-8b6c-b83f166b3c86.png)
   
-  Ini adalah hasilnya
+  Ini adalah hasilnya : 
+  
+  
 ![Kazam_screenshot_00006](https://user-images.githubusercontent.com/97229948/169575888-5c937ae0-eeea-4c03-b35e-8f5cd28e8b35.png)
   
-  Tekan 0 pada keyboard untuk keluar program
+  Tekan 0 pada keyboard untuk keluar program : 
+  
+  
 ![Kazam_screenshot_00005](https://user-images.githubusercontent.com/97229948/169576272-77efb30b-9536-464e-8982-1deea553a54c.png)
 
   
