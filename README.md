@@ -21,6 +21,7 @@
 $ sudo apt-get update
 $ sudo apt-get install -y git
 $ git clone https://github.com/Nabil-Syahnaufal/KonversiGambar.git
-$ python3 -m pip install -r requirements.txt
+$ cd KonversiGambar
+$ python3 -m pip install -r requirement.txt
 $ python3 KonversiGambar.py
 ```
